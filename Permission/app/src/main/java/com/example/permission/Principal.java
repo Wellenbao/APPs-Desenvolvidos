@@ -1,0 +1,31 @@
+package com.example.permission;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.widget.Toast;
+
+public class Principal extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_principal);
+        getSupportActionBar().hide();
+
+        ActivityCompat.requestPermissions(Principal.this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 100); }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch( requestCode ){ case 100 :
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(Principal.this, "Permissão Aprovada!", Toast.LENGTH_SHORT).show(); }
+            else
+            { Toast.makeText(Principal.this, "Permissão Negada!", Toast.LENGTH_SHORT).show(); }
+            break; }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+}

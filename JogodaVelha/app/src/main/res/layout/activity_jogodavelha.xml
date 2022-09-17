@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogodaVelha">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/btn02"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@mipmap/icone" />
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="77dp"
+        android:layout_height="73dp"
+        android:layout_above="@id/btn05"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn05"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn05"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/btn05"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn05"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn05"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn05"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn08"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn05"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn05"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/btn05"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn05"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/btn05"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/app_name"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btnReplay"
+        style="@style/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn08"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Replay"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JOGADOR X"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="60dp" />
+</RelativeLayout>

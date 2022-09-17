@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jogodonumero">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="424dp"
+        android:layout_height="752dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/numeros"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tranparent" />
+
+    <EditText
+        android:id="@+id/edtValorOculto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/botao3"
+        android:enabled="false"
+        android:text="?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@id/edtValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/botao"
+        android:hint="Digite o valor!"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnEnviar"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/botao"
+        android:text="TENTAR"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovo"
+        tools:layout_editor_absoluteX="10dp"
+        android:onClick="clickBtnTentar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNovo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/botao2"
+        android:text="RESET"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDica"
+        tools:layout_editor_absoluteX="10dp"
+        android:onClick="clickBtnReset" />
+
+    <TextView
+        android:id="@+id/txtDica"
+        android:layout_width="256dp"
+        android:layout_height="68dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="36dp"
+        android:text="Valor de 1 até 10"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

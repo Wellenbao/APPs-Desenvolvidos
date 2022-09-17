@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Splash">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">330dp</item>
+        <item name="android:layout_height">455dp</item>
+    </style>
+
+    <style name="Splashtxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.805</item>
+    </style>
+
+    <style name="reset">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginStart">125dp</item>
+        <item name="android:layout_marginEnd">123dp</item>
+        <item name="android:layout_marginBottom">90dp</item>
+        <item name="android:drawableLeft">@drawable/ic_replay</item>
+    </style>
+</resources>
